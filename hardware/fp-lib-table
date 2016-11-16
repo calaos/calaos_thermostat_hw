@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name w_smd_dil)(type KiCad)(uri /Users/nicolasaguirre/Dev/KICADMODS/w_smd_dil.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calaos:rules xmlns:calaos="http://www.calaos.fr">
+    <calaos:rule name="Day heating time zone" specialType="" type="Bar">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="input_3" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="intern_3" oper="==" val="false"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="intern_0" val="" val_var="intern_1"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Night heating time zone" specialType="" type="Bar">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="input_3" oper="==" val="false"/>
+        </calaos:condition>
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="intern_3" oper="==" val="false"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="intern_0" val="" val_var="intern_2"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Day set point changes" specialType="" type="Bar">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="input_3" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:condition type="output" trigger="true">
+            <calaos:output id="intern_1" oper="==" val="changed"/>
+        </calaos:condition>
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="intern_3" oper="==" val="false"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="intern_0" val="" val_var="intern_1"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Night set point changes" specialType="" type="Bar">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="input_3" oper="==" val="false"/>
+        </calaos:condition>
+        <calaos:condition type="output" trigger="true">
+            <calaos:output id="intern_2" oper="==" val="changed"/>
+        </calaos:condition>
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="intern_3" oper="==" val="false"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="intern_0" val="" val_var="intern_2"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Hollydays" specialType="" type="Bar">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="intern_3" oper="==" val="true"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="intern_0" val="6"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Back from hollidays" specialType="" type="Bar">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="intern_0" oper="==" val="" val_var="intern_2"/>
+        </calaos:condition>
+    </calaos:rule>
+    <calaos:rule name="Heater ON" specialType="" type="Bar">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="input_4" oper="INF=" val="" val_var="intern_0"/>
+        </calaos:condition>
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="intern_3" oper="==" val="false"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="output_0" val="true"/>
+        </calaos:action>
+    </calaos:rule>
+    <calaos:rule name="Heater OFF" specialType="" type="Bar">
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="input_4" oper="SUP" val="" val_var="intern_0"/>
+        </calaos:condition>
+        <calaos:condition type="standard" trigger="true">
+            <calaos:input id="intern_3" oper="==" val="false"/>
+        </calaos:condition>
+        <calaos:action type="standard">
+            <calaos:output id="output_0" val="false"/>
+        </calaos:action>
+    </calaos:rule>
+</calaos:rules>

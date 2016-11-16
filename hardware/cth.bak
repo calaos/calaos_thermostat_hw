@@ -1,0 +1,521 @@
+EESchema Schematic File Version 2
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:brooktre
+LIBS:cmos4000
+LIBS:cmos_ieee
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intel
+LIBS:interface
+LIBS:ir
+LIBS:Lattice
+LIBS:linear
+LIBS:logo
+LIBS:maxim
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:power
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:Xicor
+LIBS:xilinx
+LIBS:Zilog
+LIBS:srd-xxvdc
+LIBS:raspberry_pi_+_conn
+LIBS:cth-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Raspberry_Pi_+_Conn P1
+U 1 1 54E92361
+P 5750 3900
+F 0 "P1" H 4650 5850 60  0000 C CNN
+F 1 "Raspberry_Pi_+_Conn" H 6050 2450 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x20" H 5750 3900 60  0001 C CNN
+F 3 "" H 5750 3900 60  0000 C CNN
+F 4 "517-30340-6002" H 5750 3900 60  0001 C CNN "Mouser Part No."
+	1    5750 3900
+	-1   0    0    -1  
+$EndComp
+Text Notes 3000 1450 0    157  Italic 31
+Raspberry Pi Connection
+Wire Notes Line
+	600  850  600  5550
+Text Notes 3000 1450 0    157  Italic 31
+Raspberry Pi Connection
+$Comp
+L DS18B20 U1
+U 1 1 57F2DB7B
+P 11750 2150
+F 0 "U1" H 11600 2400 50  0000 C CNN
+F 1 "DS18B20" H 11750 1900 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 11600 2400 50  0001 C CNN
+F 3 "" H 11600 2400 50  0000 C CNN
+	1    11750 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 57F2DB7C
+P 11150 1800
+F 0 "R1" V 11230 1800 50  0000 C CNN
+F 1 "4k7" V 11150 1800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 11080 1800 50  0001 C CNN
+F 3 "" H 11150 1800 50  0000 C CNN
+	1    11150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 57F2DB7D
+P 12450 3400
+F 0 "R3" V 12530 3400 50  0000 C CNN
+F 1 "10k" V 12450 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 12380 3400 50  0001 C CNN
+F 3 "" H 12450 3400 50  0000 C CNN
+	1    12450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC818-40 Q1
+U 1 1 57F2DB7E
+P 12850 5300
+F 0 "Q1" H 13050 5375 50  0000 L CNN
+F 1 "BC818-40" H 13050 5300 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 13050 5225 50  0000 L CIN
+F 3 "" H 12850 5300 50  0000 L CNN
+	1    12850 5300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LTV-814 U2
+U 1 1 57F2DB7F
+P 12000 3050
+F 0 "U2" H 11800 3250 50  0000 L CNN
+F 1 "LTV-814" H 12000 3250 50  0000 L CNN
+F 2 "Housings_DIP:DIP-4_W7.62mm" H 11800 2850 50  0000 L CIN
+F 3 "" H 12025 3050 50  0000 L CNN
+	1    12000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L BS170 Q2
+U 1 1 57F2DB80
+P 12950 3100
+F 0 "Q2" H 13150 3175 50  0000 L CNN
+F 1 "BS170" H 13150 3100 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 13150 3025 50  0000 L CIN
+F 3 "" H 12950 3100 50  0000 L CNN
+	1    12950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 57F2DB81
+P 13300 5300
+F 0 "R4" V 13380 5300 50  0000 C CNN
+F 1 "1k" V 13300 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 13230 5300 50  0001 C CNN
+F 3 "" H 13300 5300 50  0000 C CNN
+	1    13300 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X03 P4
+U 1 1 57F2DB83
+P 10750 2150
+F 0 "P4" H 10750 2350 50  0000 C CNN
+F 1 "1WIRE_BUS" V 10850 2150 50  0000 C CNN
+F 2 "Connect:bornier3" H 10750 2150 50  0001 C CNN
+F 3 "" H 10750 2150 50  0000 C CNN
+	1    10750 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 57F2DB84
+P 11150 1550
+F 0 "#PWR01" H 11150 1640 20  0001 C CNN
+F 1 "+5V" H 11150 1640 30  0000 C CNN
+F 2 "" H 11150 1550 60  0000 C CNN
+F 3 "" H 11150 1550 60  0000 C CNN
+	1    11150 1550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 57F2DB85
+P 11150 2400
+F 0 "#PWR02" H 11150 2400 30  0001 C CNN
+F 1 "GND" H 11150 2330 30  0001 C CNN
+F 2 "" H 11150 2400 60  0000 C CNN
+F 3 "" H 11150 2400 60  0000 C CNN
+	1    11150 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 57F2DB87
+P 11350 3150
+F 0 "R2" V 11430 3150 50  0000 C CNN
+F 1 "4k7" V 11350 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 11280 3150 50  0001 C CNN
+F 3 "" H 11350 3150 50  0000 C CNN
+	1    11350 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10950 2050 11300 2050
+Wire Wire Line
+	11300 2050 11450 2050
+Wire Wire Line
+	10950 2150 11150 2150
+Wire Wire Line
+	11150 2150 11450 2150
+Wire Wire Line
+	10950 2250 11150 2250
+Wire Wire Line
+	11150 2250 11450 2250
+Wire Wire Line
+	11150 2150 11150 1950
+Connection ~ 11150 2150
+Wire Wire Line
+	11150 1550 11150 1600
+Wire Wire Line
+	11150 1600 11150 1650
+Wire Wire Line
+	11150 1600 11300 1600
+Wire Wire Line
+	11300 1600 11300 2050
+Connection ~ 11300 2050
+Connection ~ 11150 1600
+Wire Wire Line
+	11150 2250 11150 2400
+Connection ~ 11150 2250
+Wire Wire Line
+	10800 3100 11050 3100
+Wire Wire Line
+	11050 3100 11050 3150
+Wire Wire Line
+	11050 3150 11200 3150
+Wire Wire Line
+	11500 3150 11700 3150
+Wire Wire Line
+	11700 2950 11050 2950
+Wire Wire Line
+	11050 2950 11050 3000
+Wire Wire Line
+	11050 3000 10800 3000
+$Comp
+L +5V #PWR03
+U 1 1 57F2DB88
+P 12450 2700
+F 0 "#PWR03" H 12450 2790 20  0001 C CNN
+F 1 "+5V" H 12450 2790 30  0000 C CNN
+F 2 "" H 12450 2700 60  0000 C CNN
+F 3 "" H 12450 2700 60  0000 C CNN
+	1    12450 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 57F2DB89
+P 12450 3700
+F 0 "#PWR04" H 12450 3700 30  0001 C CNN
+F 1 "GND" H 12450 3630 30  0001 C CNN
+F 2 "" H 12450 3700 60  0000 C CNN
+F 3 "" H 12450 3700 60  0000 C CNN
+	1    12450 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 2950 12300 2950
+Wire Wire Line
+	12300 3150 12450 3150
+Wire Wire Line
+	12450 3150 12750 3150
+Wire Wire Line
+	12450 3150 12450 3250
+Wire Wire Line
+	12450 3550 12450 3600
+Wire Wire Line
+	12450 3600 12450 3700
+Connection ~ 12450 3150
+Wire Wire Line
+	12450 3600 13050 3600
+Wire Wire Line
+	13050 3600 13050 3300
+Connection ~ 12450 3600
+Wire Wire Line
+	13050 2900 13050 2750
+Wire Wire Line
+	13050 2750 13550 2750
+Text Label 13350 2750 0    60   ~ 0
+RXD
+Text Label 11250 2150 0    60   ~ 0
+1WD
+Text Label 7400 3600 0    60   ~ 0
+1WD
+Wire Wire Line
+	7200 3600 7400 3600
+Wire Wire Line
+	7200 2550 7400 2550
+Text Label 7400 2550 0    60   ~ 0
+RXD
+Wire Wire Line
+	10800 4450 11100 4450
+Wire Wire Line
+	11100 4450 11100 4100
+Wire Wire Line
+	11100 4100 11850 4100
+Wire Wire Line
+	11850 4100 11850 4250
+Wire Wire Line
+	10800 4550 11100 4550
+Wire Wire Line
+	11100 4550 11100 5000
+Wire Wire Line
+	11100 5000 11750 5000
+Wire Wire Line
+	11750 5000 11750 4850
+$Comp
+L D D1
+U 1 1 57F2DB8B
+P 12750 4550
+F 0 "D1" H 12750 4650 50  0000 C CNN
+F 1 "D" H 12750 4450 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 12750 4550 50  0001 C CNN
+F 3 "" H 12750 4550 50  0000 C CNN
+	1    12750 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12250 4250 12250 4150
+Wire Wire Line
+	12250 4150 12750 4150
+Wire Wire Line
+	12750 4050 12750 4150
+Wire Wire Line
+	12750 4150 12750 4400
+Wire Wire Line
+	12250 4850 12250 5000
+Wire Wire Line
+	12250 5000 12750 5000
+Wire Wire Line
+	12750 4700 12750 5000
+Wire Wire Line
+	12750 5000 12750 5100
+$Comp
+L +5V #PWR05
+U 1 1 57F2DB8C
+P 12750 4050
+F 0 "#PWR05" H 12750 4140 20  0001 C CNN
+F 1 "+5V" H 12750 4140 30  0000 C CNN
+F 2 "" H 12750 4050 60  0000 C CNN
+F 3 "" H 12750 4050 60  0000 C CNN
+	1    12750 4050
+	-1   0    0    -1  
+$EndComp
+Connection ~ 12750 4150
+Connection ~ 12750 5000
+Wire Wire Line
+	13050 5300 13150 5300
+Wire Wire Line
+	13450 5300 13850 5300
+Text Label 13850 5300 0    60   ~ 0
+RELAY_CMD
+Wire Wire Line
+	7200 4800 7400 4800
+Text Label 7400 4800 0    60   ~ 0
+RELAY_CMD
+$Comp
+L GND #PWR06
+U 1 1 54E963F9
+P 4500 3600
+F 0 "#PWR06" H 4500 3600 30  0001 C CNN
+F 1 "GND" H 4500 3530 30  0001 C CNN
+F 2 "" H 4500 3600 60  0000 C CNN
+F 3 "" H 4500 3600 60  0000 C CNN
+	1    4500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2800 4500 2800
+Wire Wire Line
+	4500 2800 4500 2900
+Wire Wire Line
+	4500 2900 4500 3000
+Wire Wire Line
+	4500 3000 4500 3100
+Wire Wire Line
+	4500 3100 4500 3200
+Wire Wire Line
+	4500 3200 4500 3300
+Wire Wire Line
+	4500 3300 4500 3400
+Wire Wire Line
+	4500 3400 4500 3500
+Wire Wire Line
+	4500 3500 4500 3600
+Wire Wire Line
+	4650 2900 4500 2900
+Connection ~ 4500 2900
+Wire Wire Line
+	4650 3000 4500 3000
+Connection ~ 4500 3000
+Wire Wire Line
+	4650 3100 4500 3100
+Connection ~ 4500 3100
+Wire Wire Line
+	4650 3200 4500 3200
+Connection ~ 4500 3200
+Wire Wire Line
+	4650 3300 4500 3300
+Connection ~ 4500 3300
+Wire Wire Line
+	4650 3400 4500 3400
+Connection ~ 4500 3400
+Wire Wire Line
+	4650 3500 4500 3500
+Connection ~ 4500 3500
+$Comp
+L CONN_01X02 P2
+U 1 1 57F3021F
+P 10600 3050
+F 0 "P2" H 10600 3200 50  0000 C CNN
+F 1 "TELEINFO" V 10700 3050 50  0000 C CNN
+F 2 "Connect:bornier2" H 10600 3050 60  0001 C CNN
+F 3 "" H 10600 3050 60  0000 C CNN
+	1    10600 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 57F302E2
+P 10600 4500
+F 0 "P3" H 10600 4650 50  0000 C CNN
+F 1 "RELAY_OUTPUT_1" V 10700 4500 50  0000 C CNN
+F 2 "Connect:bornier2" H 10600 4500 60  0001 C CNN
+F 3 "" H 10600 4500 60  0000 C CNN
+	1    10600 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR07
+U 1 1 57F36DDA
+P 4400 1950
+F 0 "#PWR07" H 4400 2040 20  0001 C CNN
+F 1 "+5V" H 4400 2040 30  0000 C CNN
+F 2 "" H 4400 1950 60  0000 C CNN
+F 3 "" H 4400 1950 60  0000 C CNN
+	1    4400 1950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2100 4400 2100
+Wire Wire Line
+	4400 1950 4400 2100
+Wire Wire Line
+	4400 2100 4400 2200
+Wire Wire Line
+	4400 2200 4650 2200
+Connection ~ 4400 2100
+$Comp
+L SRD-XXVDC RL1
+U 1 1 57F41EDA
+P 12050 4550
+F 0 "RL1" H 12500 4700 50  0000 L CNN
+F 1 "SRD-XXVDC" H 12500 4600 50  0000 L CNN
+F 2 "Relays_ThroughHole:Relay_SANYOU_SRD_Series_Form_C" H 12050 4550 50  0001 C CNN
+F 3 "" H 12050 4550 50  0000 C CNN
+	1    12050 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12450 2950 12450 2700
+$Comp
+L GND #PWR08
+U 1 1 57F424FD
+P 12750 5650
+F 0 "#PWR08" H 12750 5650 30  0001 C CNN
+F 1 "GND" H 12750 5580 30  0001 C CNN
+F 2 "" H 12750 5650 60  0000 C CNN
+F 3 "" H 12750 5650 60  0000 C CNN
+	1    12750 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12750 5500 12750 5650
+Text Label 10800 3000 0    60   ~ 0
+I-1
+Text Label 10800 3100 0    60   ~ 0
+I-2
+$EndSCHEMATC
